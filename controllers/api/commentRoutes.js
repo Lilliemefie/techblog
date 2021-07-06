@@ -1,0 +1,1 @@
+// GET content(article) + POST comment
