@@ -12,12 +12,16 @@ Comment.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        content: {
+        writecomment: {
             type: DataTypes.TEXT,
             allowNull: false,
             validate: {
                 len: [1],
             }
+        },
+        createdOn: {
+            type: DataTypes.DATE,
+            allowNull: false,
         },
         user_id: {
             type: DataTypes.INTEGER,

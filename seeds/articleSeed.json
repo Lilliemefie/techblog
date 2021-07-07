@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Is react JS frontend or backend?",
+        "content": "js/React is an open-source frontend framework that is based on JavaScript, developed by Facebook, and best known for its virtual DOM feature. With React, we recommend Express. js/Express as a backend service.",
+        "createdOn": "July 7, 2021",
+        "user_id": "1"
+    },
+    {
+        "title": "MongoDB vs SQL Databases",
+        "content": "To begin with the comparison, MongoDB is a Non-relational Database while SQL is a Relational Database. While MongoDB supports JSON querying, a SQL Database uses SQL query processing. The basic characteristics make MongoDB a more dynamic and complex option that is fit for hierarchical data while a SQL Database remains more predefined and suited for other kinds of data storage. ",
+        "createdOn": "July 6, 2021",
+        "user_id": "2"
+    }
+]
