@@ -1,7 +1,7 @@
-const {Model, DataTypes} = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Article extends Model {}
+class Article extends Model { }
 
 Article.init(
     {
@@ -19,10 +19,6 @@ Article.init(
             type: DataTypes.TEXT,
             allowNull: false,
         },
-            createdOn: {
-                type: DataTypes.DATE,
-                allowNull: false,
-        },
         user_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
@@ -30,13 +26,14 @@ Article.init(
                 model: 'user',
                 key: 'id',
             }
-        }
+        },
     },
     {
         sequelize,
         freezeTableName: true,
         underscored: true,
         modelName: 'article',
-    });
+    }
+);
 
-    module.exports = Article; 
+module.exports = Article;

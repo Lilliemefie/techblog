@@ -19,10 +19,6 @@ Comment.init(
                 len: [1],
             }
         },
-        createdOn: {
-            type: DataTypes.DATE,
-            allowNull: false,
-        },
         user_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
@@ -38,13 +34,14 @@ Comment.init(
                 model: 'article',
                 key: 'id',
             }
-        }
+        },
     },
     {
         sequelize,
         freezeTableName: true,
         underscored: true,
         modelName: 'comment',
-    });
+    }
+);
 
     module.exports = Comment; 
